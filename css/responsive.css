@@ -1,0 +1,148 @@
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 90%;
+    }
+
+    .say h2{
+        margin: 45px;
+    }
+
+    .banner {
+        background-position: 55%;
+    }
+
+
+    .banner footer .tentacles{
+        left:36%;
+    }
+    .banner footer .octopus{
+        display: none;
+    }
+
+    .news .news_list li {
+        width:48%;
+        margin-bottom: 25px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .nav li a{
+        font-size: 12px;
+    }
+    .home {
+        min-height: 450px;
+    }
+    .home h1 {
+        font-size: 20px;
+    }
+
+    .home p{
+        font-size: 12px;
+    }
+
+    .home footer a{
+        line-height: 1.5;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .home footer:after{
+        height: 59px;
+    }
+
+    .say h2{
+        font-size: 20px;
+    }
+
+    .say p{
+        font-size: 14px;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .banner footer {
+        display: none;
+    }
+    .banner {
+        height: 370px;
+        background:url("../image/phone/banner_tentacles.png") no-repeat top right;
+    }
+
+    .banner header{
+        left:0;
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+        padding-top:95px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .aboutme{
+        background: linear-gradient(to right,#FEF200 0%,rgba(255,194,0,1) 100%);
+        padding-top: 1px;
+        height: auto;
+    }
+
+    .aboutme h2{
+        display: none;
+    }
+
+    .aboutme .aboutme_text{
+        width: 100%;
+    }
+    .aboutme .aboutme_text h3,.aboutme .aboutme_text p{
+        margin: 15px;
+    }
+    .aboutme .aboutme_text h3{
+        font-size: 12px;
+        margin-top:40px;
+    }
+
+    .aboutme .aboutme_text p{
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .news .news_list li{
+        width: 96%;
+        margin: 2%;
+    }
+
+    .new_icon{
+        background-size: 100% 100%;
+        width: 68px;
+        height: 76px;
+    }
+    .news_detail{
+        height: 240px;
+    }
+    .news_detail_text p{
+        font-size: 12px;
+    }
+
+    .me_icon {
+        width: 92px;
+        height: 65px;
+        background-size:100% 100% ;
+    }
+    .end h1{
+        top:-10px;
+    }
+
+    .end{
+        font-size: 12px;
+    }
+
+
+}
+
