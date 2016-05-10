@@ -443,12 +443,16 @@ footer .octopus{
 }
 
 .news_detail_message .back {
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     -webkit-transform:rotateY(180deg);
     -moz-transform:rotateY(180deg);
     -ms-transform:rotateY(180deg);
     -o-transform:rotateY(180deg);
     transform: rotateY(180deg);
-    z-index:1;
 }
 
 .news_detail h3{
