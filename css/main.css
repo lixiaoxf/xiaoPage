@@ -404,13 +404,7 @@ footer .octopus{
     transform: rotateY(180deg);
 }
 
-.news .news_list li:hover .news_detail_message .back {
-    -webkit-transform:rotateY(0deg);
-    -moz-transform:rotateY(180deg);
-    -ms-transform:rotateY(180deg);
-    -o-transform:rotateY(180deg);
-    transform: rotateY(0deg);
-}
+
 
 .news .news_list li:last-child{
     margin-right: 0;
@@ -448,6 +442,7 @@ footer .octopus{
 }
 
 .news_detail_message .front{
+    transform: translateZ(-12px);
 }
 
 .news_detail_message .back {
