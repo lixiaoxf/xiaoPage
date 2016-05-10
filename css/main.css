@@ -441,9 +441,6 @@ footer .octopus{
     backface-visibility: hidden;
 }
 
-.news_detail_message .front{
-    transform: translateZ(-12px);
-}
 
 .news_detail_message .back {
     -webkit-transform:rotateY(180deg);
