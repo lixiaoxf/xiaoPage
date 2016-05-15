@@ -18,10 +18,14 @@
     float: right;
 }
 
+a:hover,a:active,a:link,a:visited{
+    text-decoration:none;
+}
+
 /*网页部分*/
 .container{
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 body{
@@ -41,12 +45,12 @@ body{
 }
 
 .nav li{
-     float: left;
+    float: left;
 }
 
 .nav li a{
     display: block;
-    margin: 12px 0px 0 15px;
+    margin: 12px 0px 0 10px;
     font-size: 18px;
     font-weight: 500;
     padding:5px 7px ;
@@ -78,11 +82,11 @@ body{
     -ms-box-shadow:1px 5px 10px rgba(0,0,0,.8);
     -moz-box-shadow:1px 5px 10px rgba(0,0,0,.8);
     -o-box-shadow:1px 5px 10px rgba(0,0,0,.8);
-    -webkit-animation: moveBackground 5s infinite linear alternate;
+    /*-webkit-animation: moveBackground 5s infinite linear alternate;*/
     /*-moz-animation: moveBackground 5s infinite linear alternate;*/
     /*-ms-animation: moveBackground 5s infinite linear alternate;*/
     /*-o-animation: moveBackground 5s infinite linear alternate;*/
-    animation: moveBackground 5s infinite linear alternate;
+    /*animation: moveBackground 5s infinite linear alternate;*/
 }
 
 
@@ -107,7 +111,8 @@ body{
 
 }
 
-.home header:hover h1{
+.home header:hover h1,
+.home:target header h1{
     border:solid 1px;
     -webkit-animation: shake 3s 1 ease;
     -moz-animation: shake 3s 1 ease;
@@ -131,6 +136,7 @@ body{
     padding: 30px 90px;
     display:inline-block;
     background: #fff;
+    text-align: left;
     color:#3a3939;
     border-radius: 40px;
     -webkit-transition:all 0.3s ease-out;
@@ -159,6 +165,20 @@ body{
     border-left:1px solid #fff;
 }
 
+.say section{
+    transition: all 1s linear;
+    opacity: 0.2;
+    -webkit-transform : translate(12px);
+    transform:translate(12px);
+    overflow: hidden;
+}
+
+.say:target section,.say:hover section{
+    -webkit-transform : translate(0px);
+    transform:translate(0px);
+    opacity: 1;
+}
+
 .say {
     position: relative;
     background: rgba(255,194,0,1);
@@ -169,6 +189,7 @@ body{
     font-size:16px;
     font-weight:600;
     padding:1px 1%;
+    overflow: hidden;
 }
 
 .sayWrap {
@@ -198,11 +219,9 @@ body{
     box-shadow: 1px 5px 10px rgba(0,0,0,.8) ;
 }
 
-.banner:hover footer .tentacles,.banner:hover footer .octopus{
+.banner:hover footer .tentacles,.banner:hover footer .octopus,
+.banner:target footer .tentacles,.banner:target footer .octopus{
     -webkit-animation:grow 10s 1 linear;
-    -moz-animation:grow 10s 1 linear;
-    -o-animation:grow 10s 1 linear;
-    -ms-animation:grow 10s 1 linear;
     animation:grow 5s 1 linear;
 
     -webkit-animation-fill-mode: forwards;
@@ -309,7 +328,8 @@ footer .octopus{
     transform-style: preserve-3d;
 }
 
-.aboutme:hover h2 .aboutme_img_front{
+.aboutme:hover h2 .aboutme_img_front,
+.aboutme:target h2 .aboutme_img_front{
     -o-animation: translateAn 1s ease;
     -moz-animation: translateAn 1s ease;
     -ms-animation: translateAn 1s ease;
@@ -367,6 +387,15 @@ footer .octopus{
     background: #F0F0F0;
 }
 
+.news:target li .news_detail_message
+{
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
 .news h2 {
     line-height: 1.5;
     text-align: center;
@@ -394,6 +423,7 @@ footer .octopus{
     margin-top:25px;
     float: left;
     box-shadow: 1px 5px 15px #000;
+
 }
 
 .news .news_list li:hover .news_detail_message{
@@ -420,25 +450,23 @@ footer .octopus{
     width:100%;
     height: 85%;
     position: relative;
-    background: #fff;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     -webkit-transition:all 1s ease;
     -o-transition:transform 1s ease;
     -ms-transition:transform 1s ease;
     -moz-transition:transform 1s ease;
     transition:all 1s ease;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+
 }
 
-.news_detail_message .front,.news_detail_message .back{
+.news_detail_message .front, .news_detail_message .back{
     width: 100%;
     height: 100%;
     position: absolute;
     top:0;
     backface-visibility: hidden;
+    background-color: #ffffff;
 }
 
 
