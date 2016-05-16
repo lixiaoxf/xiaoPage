@@ -9,6 +9,17 @@
 
 }
 
+@-webkit-keyframes moveBackground {
+    0%{
+        background-position: 0 0;
+    }
+
+    100%{
+        background-position: 100%;
+    }
+
+}
+
 @keyframes grow {
     50%{
         -webkit-transform: scale(1.0);

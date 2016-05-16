@@ -71,7 +71,8 @@ body{
 }
 
 .home {
-    background: url("../image/top_bg.png") no-repeat center center fixed;
+    background: url("../image/top_bg.png") no-repeat top left;
+    background-attachment:fixed;
     background-size:cover;
     min-height: 750px;
     text-align: center;
@@ -82,11 +83,11 @@ body{
     -ms-box-shadow:1px 5px 10px rgba(0,0,0,.8);
     -moz-box-shadow:1px 5px 10px rgba(0,0,0,.8);
     -o-box-shadow:1px 5px 10px rgba(0,0,0,.8);
-    /*-webkit-animation: moveBackground 5s infinite linear alternate;*/
-    /*-moz-animation: moveBackground 5s infinite linear alternate;*/
-    /*-ms-animation: moveBackground 5s infinite linear alternate;*/
-    /*-o-animation: moveBackground 5s infinite linear alternate;*/
-    /*animation: moveBackground 5s infinite linear alternate;*/
+    -webkit-animation: moveBackground 5s infinite linear alternate;
+    -moz-animation: moveBackground 5s infinite linear alternate;
+    -ms-animation: moveBackground 5s infinite linear alternate;
+    -o-animation: moveBackground 5s infinite linear alternate;
+    animation: moveBackground 5s infinite linear alternate;
 }
 
 
@@ -468,7 +469,6 @@ footer .octopus{
     backface-visibility: hidden;
     background-color: #ffffff;
 }
-
 
 .news_detail_message .back {
     -webkit-transform:rotateY(180deg);

@@ -35,8 +35,9 @@
         font-size: 12px;
     }
     .home {
-        -webkit-animation: none;
-        animation: none;
+        -webkit-animation:none;
+        background-attachment:scroll;
+        animation:none;
         min-height:510px;
     }
     .home h1 {
@@ -54,7 +55,7 @@
     }
 
     .home footer:after{
-        height: 59px;
+        height: 120px;
     }
 
     .say h2{
@@ -119,6 +120,15 @@
     .news .news_list li{
         width: 96%;
         margin: 2%;
+    }
+
+    .news .news_detail_message{
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .news_detail_message .front{
+        transform: translateZ(1px);
     }
 
     .new_icon{
