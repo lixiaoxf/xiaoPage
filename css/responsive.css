@@ -31,6 +31,7 @@
 @media screen and (max-width: 768px){
 
 
+
     .nav li a{
         font-size: 12px;
     }
@@ -52,10 +53,6 @@
         line-height: 1.5;
         font-size: 14px;
         padding: 10px 15px;
-    }
-
-    .home footer:after{
-        height: 120px;
     }
 
     .say h2{
